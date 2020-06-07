@@ -1,0 +1,31 @@
+.blog {
+  display: grid;
+  grid-column: center-start/center-end;
+
+  &__paragraph {
+    margin: 0 auto;
+    width: 57%;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column-gap: 4rem;
+  }
+  &__card {
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    &:hover {
+      box-shadow: 0px 15px 40px 0px rgba(4, 10, 50, 0.1);
+    }
+    &__date.paragraph {
+      margin-bottom: 0;
+    }
+    &--img{
+      padding: 1.2rem 0;
+    }
+  }
+}

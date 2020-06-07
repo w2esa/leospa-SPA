@@ -1,0 +1,32 @@
+.banner {
+  grid-column: full-start/full-end;
+  display: flex;
+
+  &__flower img {
+    height: 42rem;
+    width: auto;
+    margin-top: 10rem;
+
+    transform: translateX(-13rem);
+    -webkit-transform: translateX(-13rem);
+    -moz-transform: translateX(-13rem);
+    -ms-transform: translateX(-13rem);
+    -o-transform: translateX(-13rem);
+  }
+  &__content {
+    margin-top: 10rem;
+    width: 30%;
+
+    &--primary-paragraph {
+      color: var(--color-primary);
+    }
+  }
+  &__img {
+    height: 52rem;
+    transform: translateX(54rem) translateY(-53rem);
+    -webkit-transform: translateX(54rem) translateY(-53rem);
+    -moz-transform: translateX(54rem) translateY(-53rem);
+    -ms-transform: translateX(54rem) translateY(-53rem);
+    -o-transform: translateX(54rem) translateY(-53rem);
+  }
+}

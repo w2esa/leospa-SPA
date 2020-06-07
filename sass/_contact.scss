@@ -1,0 +1,31 @@
+.contact {
+  grid-column: center-start/center-end;
+  &__paragraph {
+    margin: 0 auto;
+    width: 57%;
+  }
+  &__address {
+    grid-column: col-start 2 / col-end 3;
+  }
+  &__from {
+    grid-column: col-start 4 / full-end;
+  }
+}
+.input {
+  font-family: inherit;
+  text-transform: uppercase;
+  width: 60%;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3em;
+  outline: none;
+  border: 1px solid var(--border-color);
+  &:focus{
+      border: none;
+      border-radius: 0;
+      border-bottom: 2px solid var(--color-primary);
+  }
+}
+.textarea {
+  resize: none;
+}

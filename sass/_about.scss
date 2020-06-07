@@ -1,0 +1,9 @@
+.about{
+    grid-column: center-start/center-end;
+    text-align: center;
+
+    &__into{
+        color: var(--font-display-color);
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,12 @@
+.features {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-column-gap: 2rem;
+  &__card {
+    &--img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  background: var(--color-light);
+  grid-column: full-start/full-end;
+  text-align: center;
+  padding: 10rem 0;
+  &__into {
+    margin-top: -2rem;
+    letter-spacing: 1.8;
+  }
+  &__nav {
+    &--item {
+      display: inline-block;
+    }
+    &--item:not(:last-child) {
+      padding-right: 7rem;
+    }
+    &--link {
+      font-family: inherit;
+      font-size: inherit;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

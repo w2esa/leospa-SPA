@@ -1,0 +1,42 @@
+// COLOR
+:root{
+  --color-primary: #ff817e;
+  --button-color: #30383b;
+  --button-color-primary: #f56462;
+  --font-display-color: #888888;
+  --font-primary-color: #263a41;
+  
+  --feature-bg: #30383b;
+  // --border-color: #b8b8b8;
+  --border-color: #888;
+  --color-light: #fff9f8;
+  
+  
+  //FONT VARIABLE
+  --font-primary: 'Rufina Bold', sans-serif;
+  --font-display: 'Roboto Light', sans-serif;
+  --font-display-size: 1.6rem;
+}
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: var(--font-display-size)
+}
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end]) [center-end] 1fr [full-end];
+}

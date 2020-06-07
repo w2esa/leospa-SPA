@@ -1,0 +1,30 @@
+.header {
+  grid-column: center-start/center-end;
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    margin-right: 15rem;
+  }
+  &__nav {
+    &--item {
+      display: inline-block;
+    }
+    &--item:not(:last-child) {
+      padding-right: 5rem;
+    }
+    &--link {
+      font-family: inherit;
+      font-size: inherit;
+      text-transform: uppercase;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}
